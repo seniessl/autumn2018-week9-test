@@ -26,15 +26,16 @@
 
     <section class="emergency-report">
         <h2>Report an emergency</h2>
-
         <form action="" method="post">
-
-            <input type="text" name="subject" placeholder="Cause of emergency">
-
-            <textarea name="description" placeholder="Thorough description"></textarea>
-
-            <input type="submit" value="Send to the Watchtower">
-        </form>
+                @csrf
+    
+                <input type="text" name="subject" placeholder="Cause of emergency">
+    
+                <textarea name="description" placeholder="Thorough description"></textarea>
+    
+                <input type="submit" value="Send to the Watchtower">
+            </form>
+        
     </section>
 
 </div>
